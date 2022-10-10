@@ -1,0 +1,1 @@
+# 7kyu-codewars-methods
