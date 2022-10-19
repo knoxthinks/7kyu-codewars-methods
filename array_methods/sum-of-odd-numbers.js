@@ -11,3 +11,9 @@ function cubeOdd(array){
   }
   // console.log(fooSum([2,3,4,5,6]))
   //should return 27 + 125 = 152
+
+//solution
+  let cubeOdd = a => {
+    var isNumeric = a.every(x=>!isNaN(x))
+    return isNumeric ? a.filter(n=>n%2).reduce((s,n)=>s+(n*n*n),0) : undefined
+  }
