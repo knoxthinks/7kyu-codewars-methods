@@ -21,3 +21,13 @@ function reverseWords(string){
   
   console.log(reverseWords('This is an example'))
   //"This is an example!" would return "sihT si na !elpmaxe"
+
+  //refactor 11/14/21
+  function reverseWords(s){
+    let newS = () => s.split(' ')
+                        .map((x) => x.split('').reverse().join(''))
+                        .join(' ')
+    console.log(newS)
+  }
+  reverseWords('this is a string')
+  //should return 'gnirts a si siht'
